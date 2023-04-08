@@ -3,11 +3,15 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "extensions": [
-        "ms-vscode.cpptools",
-        "cschlosser.doxdocgen",
-        "hellbent.vscode-faust"
-    ],
+    "customizations": {
+        "codespaces": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "cschlosser.doxdocgen",
+                "hellbent.vscode-faust"
+            ]
+        }
+    },
     "postCreateCommand": "./setup_container.sh",
     "portsAttributes": {
 		"8001": {
